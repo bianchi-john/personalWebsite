@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- jquery and favicon-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- icons -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+
+
+    <title>John Bianchi's projects website</title>
+
+    <!-- Importing custom style and script  -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <!--<script type="text/javascript" src="script.js"></script>-->
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#top">Top <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#middle">Projects</a>
+                <a class="nav-item nav-link" href="#bottom">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+
+    <section id="top">
+        <div class="header">
+            <img id="profile_image" src="img/john.png" alt="John Bianchi">
+
+            <!--Content before waves-->
+            <div class="inner-header flex">
+                <h1 id="title">John Bianchi's projects website</h1>
+            </div>
+
+            <!--Waves Container-->
+            <div>
+
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+
+        </div>
+    </section>
+
+    <!--Header ends-->
+
+
+    <!-- Content -->
+    <section id="middle">
+        <div class="card-deck">
+
+            <!-- card 1 -->
+            <div class="card" id="first_card">
+                <img class="card-img-top" src="img/tripadvisor.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Tripadvisor web scraping</h5>
+                    <p class="card-text">Web scraping of Tripadvisor website using a Raspberry Pi 3 Model B+ and
+                        development of
+                        a dedicated website for the visualization of the extracted data</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated may 2019</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                    View
+                </button>
+
+                <!-- Modal for card 1-->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Tripadvisor web scraping</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Web scraping of Tripadvisor using a Raspberry Pi 3 Model B+ and development of a
+                                dedicated website for the visualization of the extracted data.<br>
+                                This project constitutes the thesis of my bachelor's degree in digital
+                                humanities.<br><br><br>
+                                <a href="documents/Documentation.pdf">Documentation (available only in
+                                    Italian)</a><br><br>
+                                <a href="tripadvisor/index.html">Website for data visualization (Not fully responsive
+                                    for small screens)</a><br><br>
+                                <a href="tripadvisor/scraper.py">Code used for data extraction (web
+                                    scraping)</a><br><br>
+                                <a href="tripadvisor/tripadvisor_database.zip">Database with extracted and organized
+                                    data</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- card 2 -->
+
+            <div class="card">
+                <img class="card-img-top" src="img/album_covers.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Album Covers</h5>
+                    <p class="card-text">Virtual museum for cataloging music album covers
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Finished in January 2021</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2">
+                    View
+                </button>
+                <!-- Modal for card 2-->
+
+                <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Album Covers</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Website developed for the course <i>7AAVDM14 The Cultural Web: Building a Humanities
+                                    Website</i> at <i>King's College</i>.
+                                It constitutes the final project along with documentation that is available below. The
+                                project is a virtual museum dedicated
+                                to cataloging music album covers. <a href="https://jekyllrb.com/">Jekyll</a> and <a
+                                    href="https://threejs.org/">Three.js</a> and many other tools were used for the
+                                realization.
+                                This project was made together with my friend and university colleague <a
+                                    href="https://github.com/Sblbl">Marta Fioravanti</a> <br>
+                                <br><br>
+                                <a href="https://infallible-thompson-c65378.netlify.app/">Digital Museum (Not yet fully
+                                    responsive for small screens)</a><br><br>
+                                <a href="documents/report.pdf">Documentation</a><br><br>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- card 3 -->
+
+            <div class="card">
+                <img class="card-img-top" src="img/carvana.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Data analysis on Carvana Dataset</h5>
+                    <p class="card-text">Data Mining Project based on a dataset containing vehicle data belonging to
+                        Carvana Co.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Finished in January 2020</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3">
+                    View
+                </button>
+                <!-- Modal for card 3-->
+
+                <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Data analysis on Carvana Dataset</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Report realized for the course of <i>Data Mining: Fundamentals</i>
+                                based on the dataset containing vehicle data belonging to Carvana Co.<br><br>
+                                <a href="documents/Data_Mining_I.pdf">Documentation</a><br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+
+            <div class="card">
+                <img class="card-img-top" src="img/kingscollege.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">The price of automatic communication</h5>
+                    <p class="card-text">Final essay developed for the course <i>"Artificial Intelligence & Society"</i>
+                        at King's College London.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Finished in January 2021</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong4">
+                    View
+                </button>
+                <!-- Modal for card 4-->
+
+                <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">The price of automatic communication
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Final essay developed for the course "Artificial Intelligence & Society" at King's
+                                College London.<br><br>
+                                <i>"This paper tries to put itself as a point of reflection on what is the discipline of
+                                    machine learning extending
+                                    the argumentation also towards the main companies that use this artificial
+                                    intelligence technology. The lack
+                                    of ethical attention regarding the content of training datasets is an intellectual
+                                    weakness that should not be
+                                    underestimated in order not only to safeguard the environment and prevent forms of
+                                    discrimination but also
+                                    to establish a conscious and genuine relationship with this important form of
+                                    technology."</i><br><br>
+                                <a href="documents/The_price_of_automatic_communication.pdf">The price of automatic
+                                    communication</a>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of the deck -->
+            <!-- start of teh second card-deck -->
+        </div>
+        <div class="card-deck" id="second_deck">
+            <!-- card 5 -->
+
+            <div class="card">
+                <img class="card-img-top" src="img/imperia.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bagno Imperia</h5>
+                    <p class="card-text">Website created with Wordpress for <i>Bagno Imperia</i>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Finished in december 2020</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong5">
+                    View
+                </button>
+                <!-- Modal for card 5-->
+
+                <div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Bagno Imperia</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Website developed in collaboration with <a href="#">Fabio
+                                    Camillo</a> on request of <a href="https://www.wallycommunication.com/">Wally
+                                    Communication</a><br><br>
+                                <a href="http://bagnoimperia.com/">Bagno Imperia website</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- card 6 -->
+
+            <div class="card">
+                <img class="card-img-top" src="img/elnino.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">El Niño</h5>
+                    <p class="card-text">Website created with Wordpress for <i>El Niño</i>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Finished in june 2020</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong6   ">
+                    View
+                </button>
+                <!-- Modal for card 6-->
+
+                <div class="modal fade" id="exampleModalLong6" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">El Niño</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Website created on request of <a href="https://www.wallycommunication.com/">Wally
+                                    Communication</a><br><br>
+                                <a href="http://elninolucca.com/">El Niño website</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 7 -->
+
+            <div class="card">
+                <img class="card-img-top" src="img/java.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Java project</h5>
+                    <p class="card-text">Project developed for the course of <i>"Programming and data analysis"</i> at
+                        the University of Pisa. </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Finished in February 2020</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong7">
+                    View
+                </button>
+                <!-- Modal for card 7-->
+
+                <div class="modal fade" id="exampleModalLong7" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Java project</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Project developed for the course of "Programming and data analysis" at the University of
+                                Pisa.<br>
+                                The project consists in the management of a real estate agency through a program written
+                                entirely in Java using multiple classes and packages.
+                                <br><br>
+                                <a href="documents/Java/code.zip">Code</a><br><br>
+                                <a href="documents/Java/report.pdf">Documentation (available only in Italian)</a><br>
+
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card 8 -->
+
+            <div class="card">
+                <img class="card-img-top" src="img/react.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">ReactJS project</h5>
+                    <p class="card-text">A basic project created using ReactJS.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Finished in september 2019</small>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong8">
+                    View
+                </button>
+                <!-- Modal for card 8-->
+
+                <div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">ReactJS project</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                A basic project created using ReactJS. Obtained by
+                                following the official tutorial at this <a
+                                    href="https://it.reactjs.org/tutorial/tutorial.html">page</a>
+                                <br><br>
+                                <a href="react/laughing-kirch-c009ec.netlify.com.html">Website</a><br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- end of content section -->
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <section id="bottom">
+
+
+
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Curriculum Vitae</h3>
+                            <button type="button" id="curriculum_botton" class="btn btn-primary"><a id="curriculum_link"
+                                    href="documents/John_Bianchi_Curruculum.pdf">Download</a></button>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Contacts</h3>
+                            <ul>
+                                <li><a id="mail"
+                                        href="mailto:john.bianchi.lucca@gmail.com">john.bianchi.lucca@gmail.com</a></li>
+                                <li><a href="tel:00393318732944">+39 331 873 2944</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>About me</h3>
+                            <p id="bio">Passionate about language technology and front end developer.
+                                I studied digital humanities at the University of
+                                Pisa and have done several jobs during my career.</p>
+                        </div>
+                        <div class="col item social">
+                            <a href="https://www.linkedin.com/in/john-bianchi-b66b22189/"><i
+                                    class="icon ion-social-linkedin"></i></a>
+                            <a href="https://github.com/John-Bianchi-Lucca"><i class="icon ion-social-github"></i></a>
+                            <a href="https://www.instagram.com/john__bianchi/"><i
+                                    class="icon ion-social-instagram"></i></a>
+                        </div>
+                    </div>
+                    <p id="bio" class="copyright">Made using <a href="https://codepen.io/goodkatz/pen/LYPGxQz">this</a>
+                        example</p>
+                </div>
+            </footer>
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- Mandatory scripts to be maintained for the proper functioning of the website -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

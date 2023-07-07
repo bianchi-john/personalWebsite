@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_izdGjVTVlpjvTOls90muFhDZipjzsoI"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <link href="https://unpkg.com/tabulator-tables@4.2.3/dist/css/tabulator.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.3/dist/js/tabulator.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <section id="prima_Sezione">
+
+    <h1>ANALISI DATI SUL TURISMO</h1>
+    <a href="#" class="scroll-down" address="true"></a>
+    <a href="servizi.html"><button class="button"
+        style="vertical-align:middle" id="fixedbutton"><span>Servizi</span></button></a>
+  </section>
+  <section class="ok">
+    <p id="informazioniBottoni">Seleziona un Comune</p>
+    <form>
+      <input type="checkbox" name="cascina" value="Cascina">Cascina
+      <input type="checkbox" name="livorno" value="Livorno">Livorno
+      <input type="checkbox" name="lucca" value="Lucca"> Lucca
+      <input type="checkbox" name="pietrasanta" value="Pietrasanta">Pietrasanta
+    </form>
+    <div id="mappaETabelle">
+      <div id="mappa"></div>
+      <div id="tabella">
+        <p id="informazioniTabella" style="display:none;">Dati a partire dall'11 febbraio 2019 fino all'11 marzo 2019
+        </p>
+        <table style="display:none;" id="tabs">
+          <tr>
+            <th>Comune</th>
+            <th>Media Prezzo</th>
+            <th>Media Punteggio</th>
+            <th>Numero Strutture</th>
+          </tr>
+          <tr id="tabCascina" style="display:none"></tr>
+          <tr id="tabLivorno" style="display:none"></tr>
+          <tr id="tabLucca" style="display:none"></tr>
+          <tr id="tabPietrasanta" style="display:none"></tr>
+        </table>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="titolo_struttura"></h2>
+            <div id="testo"></div>
+            <div id="grafico"></div>
+          </div>
+        </div>
+      </div>
+      <div id="ViaRegioneToscana"></div>
+    </div>
+    <table id="numeriPersone" style="display:none;">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Italiani</th>
+          <th>Stranieri</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Cascina</th>
+          <td>5.919</td>
+          <td>4.756</td>
+        </tr>
+        <tr>
+          <th>Livorno</th>
+          <td>94.330</td>
+          <td>60.559</td>
+        </tr>
+        <tr>
+          <th>Lucca</th>
+          <td>105.579</td>
+          <td>135.970</td>
+        </tr>
+        <tr>
+          <th>Pietrasanta</th>
+          <td>68.538</td>
+          <td>55.588</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+
+</html>
