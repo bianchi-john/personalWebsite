@@ -421,6 +421,11 @@ p {
     }
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .coop {
-    border: 2px solid #8c0538;;
+    border: 2px solid #8c0538;
+    ;
 }
