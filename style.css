@@ -352,6 +352,9 @@ p {
     color: white;
 }
 
+
+
+
 /*Shrinking for mobile*/
 
 @media (max-width:991px) {
@@ -421,11 +424,19 @@ p {
     }
 }
 
-.hidden {
-    visibility: hidden;
-}
-
 .coop {
     border: 2px solid #8c0538;
     ;
+}
+
+@media (min-width:576px) {
+    .hidden {
+        visibility: hidden;
+    }
+}
+
+@media (max-width:575px) {
+    .hidden {
+        visibility: none;
+    }
 }
